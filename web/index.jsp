@@ -1,5 +1,10 @@
 <html>
     <body>
-        <a href="dataentry">Calculate-SI</a>
+        <hr>
+        <pre>
+        <a href="taxation">Calculate-Tax</a>
+        <a href="dataentry">Calculate-Interest</a>
+        </pre>
+        <hr>
     </body>
 </html>

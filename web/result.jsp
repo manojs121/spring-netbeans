@@ -1,21 +1,11 @@
-<%-- 
-    Document   : result
-    Created on : Nov 1, 2018, 4:35:49 PM
-    Author     : SSI
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
     <body>
-        <h1>Hello World!</h1>
+        <h3>Interest Information</h3>
+        <hr>
         <pre>
-        Amount ${amount}
-        Intr   ${interest}
+        Amount ${info.amount}
+        Intr   ${info.interest}
         </pre>
+        <hr>
     </body>
 </html>

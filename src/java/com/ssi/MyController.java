@@ -6,6 +6,7 @@
 package com.ssi;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,16 +18,13 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MyController {
     
-    @RequestMapping("calculate")
-    public ModelAndView process(@RequestParam("t1") int amt){
+    @RequestMapping("CalculateInterest")
+    public ModelAndView process(@ModelAttribute("info") InterestData data){
         ModelAndView mv=new ModelAndView("result.jsp");
-        int interest=amt*5/100;
-        mv.addObject("amount", amt);
-        mv.addObject("interest",interest);
         return mv;
     }
     @RequestMapping("dataentry")
-    public String show(){
+    public String showInputForm(){
         return "entry.jsp";
     }
 }
